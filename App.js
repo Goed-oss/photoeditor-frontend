@@ -14,7 +14,7 @@ function App() {
 
   const handleAIHeal = async () => {
     try {
-      const res = await axios.post('<https://ai-photoeditor-backend.onrender.com>/api/heal', { image });
+      const res = await axios.post('https://ai-photoeditor-backend.onrender.com/api/heal', { image });
       setResult(res.data.url);
     } catch (err) {
       alert('Error: ' + err.message);
